@@ -3,311 +3,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio acadêmico de Eduardo Hsu, estudante de Estatística na Unicamp, com projetos em modelagem estatística, séries temporais e análise multivariada.">
-  <meta name="theme-color" content="#100d16">
-  <title>Eduardo Hsu — Estatística, Modelagem & Pesquisa</title>
+  <meta name="description" content="Portfólio acadêmico e currículo de Eduardo Hsu — Estudante de Estatística na Unicamp.">
+  <title>Eduardo Hsu — Estatística</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="page-grid" aria-hidden="true"></div>
+
   <header class="site-header">
-    <nav class="container nav" aria-label="Navegação principal">
-      <a class="brand" href="#inicio" aria-label="Eduardo Hsu — início">
-        <span class="brand-mark">EH<span>.</span></span>
-        <span class="brand-name">Eduardo Hsu <small>ESTATÍSTICA · UNICAMP</small></span>
-      </a>
+    <div class="container nav">
+      <a class="brand" href="#">Eduardo Hsu</a>
       <div class="nav-links">
         <a href="#projetos">Projetos</a>
-        <a href="#pesquisa">Pesquisa</a>
-        <a href="#sobre">Sobre</a>
-        <a class="nav-contact" href="#contato">Contato <span>↗</span></a>
+        <a href="#curriculo">Currículo</a>
+        <a href="#contato">Contato</a>
       </div>
-    </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero container" id="inicio">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> PORTFÓLIO ACADÊMICO · 2026</p>
-        <h1>Dados, modelos<br>e <span class="gradient-text">perguntas melhores.</span></h1>
-        <p class="hero-lead">
-          Sou estudante de Estatística na <strong>Unicamp</strong>, interessado em compreender
-          problemas reais por meio da modelagem estatística, da inferência e de métodos computacionais.
-        </p>
-        <p class="hero-support">
-          Este espaço reúne projetos desenvolvidos na graduação e minha trajetória em pesquisa,
-          com foco em análise cuidadosa, interpretação e reprodutibilidade.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projetos">Explorar projetos <span>↓</span></a>
-          <a class="button button-ghost" href="https://github.com/EduardoSHsu" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
-          <a class="button button-ghost" href="https://www.linkedin.com/in/eduardo-hsu-99b45b367/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a>
-        </div>
-        <div class="hero-meta">
-          <span><i></i> Campinas, SP</span>
-          <span>Graduação em andamento · 2024—</span>
-        </div>
-      </div>
-
-      <aside class="hero-card" aria-label="Resumo de interesses acadêmicos">
-        <div class="card-topline"><span>ÁREAS DE INVESTIGAÇÃO</span><span class="mono">01—04</span></div>
-        <div class="research-item">
-          <span class="research-index">01</span>
-          <div><h2>Modelagem estatística</h2><p>Regressão, modelos lineares generalizados e distribuições.</p></div>
-        </div>
-        <div class="research-item">
-          <span class="research-index">02</span>
-          <div><h2>Inferência</h2><p>Inferência bayesiana e métodos de estimação.</p></div>
-        </div>
-        <div class="research-item">
-          <span class="research-index">03</span>
-          <div><h2>Métodos computacionais</h2><p>Programação estatística, MCMC e bootstrap.</p></div>
-        </div>
-        <div class="research-item">
-          <span class="research-index">04</span>
-          <div><h2>Séries temporais</h2><p>Estrutura temporal, ciclos e análise de dados.</p></div>
-        </div>
-        <div class="card-foot"><span class="pulse"></span> INTERESSE EM PESQUISA APLICADA</div>
-      </aside>
-    </section>
-
-    <section class="methods-band" aria-label="Ferramentas e métodos">
-      <div class="container methods-inner">
-        <span class="band-label">FERRAMENTAS & MÉTODOS</span>
-        <span>R</span><b></b><span>SQL</span><b></b><span>Python</span><b></b>
-        <span>Regressão</span><b></b><span>ACP</span><b></b><span>Séries temporais</span><b></b><span>Inferência</span>
+  <main class="container">
+    <section class="hero">
+      <h1>Estudante de Estatística<br>na Unicamp.</h1>
+      <p>
+        Foco em modelagem estatística, inferência e análise de dados. 
+        Espaço dedicado à documentação de projetos acadêmicos e trajetória científica.
+      </p>
+      <div class="hero-links">
+        <a href="https://github.com/EduardoSHsu" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/eduardo-hsu-99b45b367/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="mailto:eduardo.hsu02@gmail.com">E-mail ↗</a>
       </div>
     </section>
 
-    <section class="section container" id="projetos">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">01 / TRABALHOS SELECIONADOS</p>
-          <h2>Projetos em <span class="gradient-text">destaque.</span></h2>
-        </div>
-        <p class="section-intro">Aplicações desenvolvidas em disciplinas da graduação, conectando métodos estatísticos, programação e interpretação dos resultados.</p>
-      </div>
-
+    <section class="section" id="projetos">
+      <h2>// PROJETOS ACADÊMICOS</h2>
       <div class="projects-grid">
-        <article class="project-card project-featured">
-          <div class="project-art art-energy">
-            <span class="art-number">01 / 08</span>
-            <div class="energy-graphic" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <span class="art-caption">MULTIVARIADA · OWID</span>
-          </div>
-          <div class="project-body">
-            <p class="project-kicker">ME731 · ANÁLISE MULTIVARIADA</p>
+        
+        <article class="project-card">
+          <div class="project-header">
             <h3>Consumo e matriz energética mundial</h3>
-            <p>Aplicação de análise de componentes principais (ACP) e distância de Mahalanobis a indicadores de consumo de energia, eletricidade e intensidade de carbono em diferentes países.</p>
-            <div class="tag-list"><span>ACP</span><span>Mahalanobis</span><span>R</span><span>OWID</span></div>
-            <a class="text-link" href="https://github.com/EduardoSHsu/ME731_P1" target="_blank" rel="noopener noreferrer">Consultar projeto <span>↗</span></a>
+            <span class="project-meta">ME731</span>
           </div>
+          <p>Aplicação de Análise de Componentes Principais (ACP) e distância de Mahalanobis em indicadores globais de energia.</p>
+          <div class="tag-list">
+            <span>ACP</span><span>Mahalanobis</span><span>R</span>
+          </div>
+          <a class="text-link" href="https://github.com/EduardoSHsu/ME731_P1" target="_blank" rel="noopener noreferrer">Repositório ↗</a>
         </article>
 
         <article class="project-card">
-          <div class="project-art art-time">
-            <span class="art-number">02 / 08</span>
-            <svg class="line-graphic" viewBox="0 0 300 100" role="img" aria-label="Ilustração abstrata de uma série temporal"><path d="M0 78 L22 65 L43 70 L63 34 L84 48 L104 25 L126 43 L147 18 L167 39 L188 52 L209 30 L229 43 L250 14 L271 25 L300 5"/></svg>
-            <span class="art-caption">SÉRIES TEMPORAIS · ARMA</span>
-          </div>
-          <div class="project-body">
-            <p class="project-kicker">ME607P2 · SÉRIES TEMPORAIS</p>
+          <div class="project-header">
             <h3>Qualidade do ar em Pequim</h3>
-            <p>Modelagem de observações de qualidade do ar por meio de modelos ARMA, investigando a dependência temporal e o comportamento da série.</p>
-            <div class="tag-list"><span>ARMA</span><span>Séries temporais</span><span>R</span></div>
-            <a class="text-link" href="https://github.com/EduardoSHsu/ME607P2" target="_blank" rel="noopener noreferrer">Consultar projeto <span>↗</span></a>
+            <span class="project-meta">ME607</span>
           </div>
+          <p>Modelagem de séries temporais utilizando a classe de modelos ARMA para análise de dependência temporal.</p>
+          <div class="tag-list">
+            <span>ARMA</span><span>Séries Temporais</span><span>R</span>
+          </div>
+          <a class="text-link" href="https://github.com/EduardoSHsu/ME607P2" target="_blank" rel="noopener noreferrer">Repositório ↗</a>
         </article>
 
         <article class="project-card">
-          <div class="project-art art-regression">
-            <span class="art-number">03 / 08</span>
-            <div class="scatter-graphic" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <span class="art-caption">REGRESSÃO LOGÍSTICA</span>
-          </div>
-          <div class="project-body">
-            <p class="project-kicker">ME714 · ANÁLISE DE DADOS DISCRETOS</p>
+          <div class="project-header">
             <h3>Medicina chinesa e terapia anti-hipertensiva</h3>
-            <p>Investigação da eficácia de uma terapia combinada com regressão logística múltipla e análise de deviance.</p>
-            <div class="tag-list"><span>Regressão logística</span><span>Deviance</span><span>R</span></div>
-            <a class="text-link" href="https://github.com/EduardoSHsu/ME714" target="_blank" rel="noopener noreferrer">Consultar projeto <span>↗</span></a>
+            <span class="project-meta">ME714</span>
           </div>
+          <p>Investigação de eficácia terapêutica por meio de regressão logística múltipla e análise de deviance.</p>
+          <div class="tag-list">
+            <span>Regressão Logística</span><span>Deviance</span><span>R</span>
+          </div>
+          <a class="text-link" href="https://github.com/EduardoSHsu/ME714" target="_blank" rel="noopener noreferrer">Repositório ↗</a>
         </article>
 
         <article class="project-card">
-          <div class="project-art art-spectrum">
-            <span class="art-number">04 / 08</span>
-            <div class="spectrum-graphic" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <span class="art-caption">ANÁLISE ESPECTRAL</span>
-          </div>
-          <div class="project-body">
-            <p class="project-kicker">ME607P1 · SÉRIES TEMPORAIS</p>
+          <div class="project-header">
             <h3>Análise espectral do PIB da China</h3>
-            <p>Estudo dos fundamentos da análise espectral e sua aplicação ao Produto Interno Bruto da China, explorando padrões cíclicos.</p>
-            <div class="tag-list"><span>Análise espectral</span><span>PIB</span><span>R</span></div>
-            <a class="text-link" href="https://github.com/EduardoSHsu/ME607P1" target="_blank" rel="noopener noreferrer">Consultar projeto <span>↗</span></a>
+            <span class="project-meta">ME607</span>
           </div>
+          <p>Estudo dos fundamentos de análise espectral aplicados a dados macroeconômicos cíclicos.</p>
+          <div class="tag-list">
+            <span>Análise Espectral</span><span>PIB</span><span>R</span>
+          </div>
+          <a class="text-link" href="https://github.com/EduardoSHsu/ME607P1" target="_blank" rel="noopener noreferrer">Repositório ↗</a>
         </article>
-        
+
         <article class="project-card">
-          <div class="project-art art-design">
-            <span class="art-number">05 / 08</span>
-            <div class="design-graphic" aria-hidden="true"><span>A</span><span>B</span><span>AB</span><span>B²</span><span>A²</span><span>+</span></div>
-            <span class="art-caption">PLANEJAMENTO EXPERIMENTAL</span>
+          <div class="project-header">
+            <h3>Otimização de compostos naturais</h3>
+            <span class="project-meta">ME623</span>
           </div>
-          <div class="project-body">
-            <p class="project-kicker">ME623P1 · PLANEJAMENTO E PESQUISA</p>
-            <h3>Planejamento de misturas e compostos naturais</h3>
-            <p>Estudo de delineamentos de misturas com blocos e otimização da eficácia cardioprotetora de compostos de <em>Salvia miltiorrhiza</em>.</p>
-            <div class="tag-list"><span>Planejamento</span><span>Otimização</span><span>Experimentos</span></div>
-            <a class="text-link" href="https://github.com/EduardoSHsu/ME623P1" target="_blank" rel="noopener noreferrer">Consultar projeto <span>↗</span></a>
+          <p>Delineamento de misturas com blocos para estudo de eficácia cardioprotetora.</p>
+          <div class="tag-list">
+            <span>Planejamento de Experimentos</span><span>Otimização</span>
           </div>
+          <a class="text-link" href="https://github.com/EduardoSHsu/ME623P1" target="_blank" rel="noopener noreferrer">Repositório ↗</a>
         </article>
 
-           <article class="project-card">
-          <div class="project-art monte-carlo-graphic">
-            <span class="art-number">06 / 08</span>
-            <div class="scatter-graphic" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <span class="art-caption">MÉTODO DE MONTE CARLO E BOOTSTRAP</span>
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Simulação do Campeonato Brasileiro 2026</h3>
+            <span class="project-meta">ME524</span>
           </div>
-          <div class="project-body">
-            <p class="project-kicker">ME524 · COMPUTAÇÃO APLICADA À ESTATÍSTICA</p>
-            <h3>Simulação do Campeonato Brasileiro de Futebol de 2026</h3>
-            <p>Aplicação dos métodos de Monte Carlo e Bootstrap para simular
-      cenários do Campeonato Brasileiro de 2026 e estimar probabilidades
-      associadas aos possíveis resultados da competição.</p>
-            <div class="tag-list"><span>Método de Monte Carlo</span><span>Bootstrap</span><span>R</span></div>
-            <a class="text-link" href="https://github.com/EduardoSHsu/ME524" target="_blank" rel="noopener noreferrer">Consultar projeto <span>↗</span></a>
+          <p>Emprego de métodos de Monte Carlo e Bootstrap para estimar probabilidades de resultados na competição.</p>
+          <div class="tag-list">
+            <span>Monte Carlo</span><span>Bootstrap</span><span>R</span>
           </div>
+          <a class="text-link" href="https://github.com/EduardoSHsu/ME524" target="_blank" rel="noopener noreferrer">Repositório ↗</a>
         </article>
 
-           <article class="project-card">
-          <div class="project-art questionnaire-graphic">
-            <span class="art-number">07 / 08</span>
-            <div class="scatter-graphic" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <span class="art-caption">TIPOS DE QUESTIONÁRIO</span>
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Comparação de questionários abertos e fechados</h3>
+            <span class="project-meta">ME430</span>
           </div>
-          <div class="project-body">
-            <p class="project-kicker">ME430 · TÉCNICAS DE AMOSTRAGEM</p>
-            <h3>Diferenças nos questionários abertos e fechados</h3>
-            <p>  Estudo comparativo entre questionários abertos e fechados,
-      explorando suas principais características, diferenças e
-      aplicações na coleta de dados.</p>
-            <div class="tag-list"><span>Técnicas de Amostragem</span></div>
-            <a class="text-link" href="https://github.com/EduardoSHsu/ME430" target="_blank" rel="noopener noreferrer">Consultar projeto <span>↗</span></a>
+          <p>Estudo comparativo das abordagens metodológicas na coleta de dados amostrais.</p>
+          <div class="tag-list">
+            <span>Amostragem</span>
           </div>
+          <a class="text-link" href="https://github.com/EduardoSHsu/ME430" target="_blank" rel="noopener noreferrer">Repositório ↗</a>
         </article>
 
-            <article class="project-card">
-          <div class="project-art vehicle-regression-graphic">
-            <span class="art-number">08 / 08</span>
-            <div class="scatter-graphic" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <span class="art-caption">REGRESSÃO MÚLTIPLA</span>
-          </div>
-          <div class="project-body">
-            <p class="project-kicker">ME613 · ANÁLISE DE REGRESSÃO</p>
+        <article class="project-card">
+          <div class="project-header">
             <h3>Estimação de preço de veículos</h3>
-            <p>  Aplicação da regressão linear múltipla para estimar preços de veículos
-    com base em suas características, explorando a relação entre as
-    variáveis explicativas e o valor de mercado.</p>
-            <div class="tag-list"><span>Regressão Linear Múltipla</span><span>R</span></div>
-            <a class="text-link" href="https://github.com/EduardoSHsu/ME613" target="_blank" rel="noopener noreferrer">Consultar projeto <span>↗</span></a>
+            <span class="project-meta">ME613</span>
           </div>
+          <p>Aplicação de regressão linear múltipla para modelagem e previsão de preços de mercado.</p>
+          <div class="tag-list">
+            <span>Regressão Linear Múltipla</span><span>R</span>
+          </div>
+          <a class="text-link" href="https://github.com/EduardoSHsu/ME613" target="_blank" rel="noopener noreferrer">Repositório ↗</a>
         </article>
+
+      </div>
+    </section>
+
+    <section class="section" id="curriculo">
+      <h2>// RESUMO CURRICULAR</h2>
+      <div class="cv-grid">
         
-      </div>
-      <p class="projects-note"><span>↳</span> Os projetos são trabalhos acadêmicos; descrições e materiais podem ser atualizados conforme a formação avança.</p>
-    </section>
-
-    <section class="research-section" id="pesquisa">
-      <div class="container research-layout">
-        <div class="research-heading">
-          <p class="eyebrow">02 / PESQUISA</p>
-          <h2>Do problema<br>à <span class="gradient-text">distribuição.</span></h2>
-          <p>Minha iniciação científica amplia o contato com a construção de modelos probabilísticos e suas aplicações.</p>
-        </div>
-        <div class="research-detail">
-          <div class="timeline-line"><span></span></div>
-          <article>
-            <p class="mono-label">2026 — PRESENTE · UNICAMP</p>
-            <h3>Iniciação Científica</h3>
-            <p>Estudo e desenvolvimento de classes de distribuições e modelos de regressão, com atenção à representação probabilística e às propriedades dos modelos.</p>
-            <div class="tag-list"><span>Distribuições</span><span>Modelos de regressão</span><span>Probabilidade</span></div>
-          </article>
-          <div class="research-note">
-            <span class="note-symbol">∑</span>
-            <p><strong>Interesses de pesquisa</strong><br>Estatística computacional, inferência bayesiana, regressão e modelagem estatística.</p>
+        <div class="cv-block">
+          <h3>Formação & Pesquisa</h3>
+          <div class="cv-item">
+            <p class="cv-item-title">Graduação em Estatística</p>
+            <p class="cv-item-sub">Universidade Estadual de Campinas (Unicamp) · 2024 — Presente</p>
+          </div>
+          <div class="cv-item">
+            <p class="cv-item-title">Iniciação Científica</p>
+            <p class="cv-item-sub">Unicamp · 2026 — Presente</p>
+            <p>Estudo e desenvolvimento de classes de distribuições e modelos de regressão.</p>
+          </div>
+          <div class="cv-item">
+            <p class="cv-item-title">Summer Camp — Beijing Jiaotong University</p>
+            <p class="cv-item-sub">Julho de 2026</p>
+            <p>Intercâmbio com foco em língua e cultura chinesas. Atuação como aluno e monitor.</p>
           </div>
         </div>
+
+        <div class="cv-block">
+          <h3>Experiência & Habilidades</h3>
+          <div class="cv-item">
+            <p class="cv-item-title">Exército Brasileiro</p>
+            <p class="cv-item-sub">2ª Cia Com Mec · 2023 — 2024</p>
+            <p>Atuação na área de manutenção de comunicações.</p>
+          </div>
+          <div class="cv-item">
+            <p class="cv-item-title">Linguagens e Ferramentas</p>
+            <p>R, SQL, Python, RStudio, VS Code, Git/GitHub, Pacote Office.</p>
+          </div>
+          <div class="cv-item">
+            <p class="cv-item-title">Idiomas</p>
+            <p>Português (Nativo), Inglês (Intermediário), Mandarim (HSK 3 / HSKK 1), Japonês e Espanhol (Básico).</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section class="section container" id="sobre">
-      <div class="section-heading about-heading">
-        <div><p class="eyebrow">03 / TRAJETÓRIA</p><h2>Uma formação <span class="gradient-text">em construção.</span></h2></div>
-        <p class="section-intro">Estatística é, para mim, uma forma de estruturar perguntas, quantificar incertezas e construir argumentos a partir de evidências.</p>
-      </div>
-
-      <div class="journey-grid">
-        <article class="journey-card education-card">
-          <span class="journey-icon">∂</span>
-          <p class="mono-label">2024 — PRESENTE</p>
-          <h3>Graduação em Estatística</h3>
-          <p>Universidade Estadual de Campinas — Unicamp</p>
-          <span class="journey-foot">IMECC · Campinas, SP</span>
-        </article>
-        <article class="journey-card">
-          <span class="journey-icon">中</span>
-          <p class="mono-label">JULHO 2026</p>
-          <h3>Summer Camp em Pequim</h3>
-          <p>Programa com a Beijing Jiaotong University e o Instituto Confúcio, com foco em língua e cultura chinesas. Atuação também como monitor do grupo.</p>
-          <span class="journey-foot">Mandarim · experiência internacional</span>
-        </article>
-        <article class="journey-card">
-          <span class="journey-icon">↗</span>
-          <p class="mono-label">2023 — 2024</p>
-          <h3>Exército Brasileiro</h3>
-          <p>Serviço na área de manutenção de comunicações, desenvolvendo disciplina, organização, comunicação e trabalho em equipe.</p>
-          <span class="journey-foot">2ª Companhia de Comunicações Mecanizada</span>
-        </article>
-      </div>
-
-      <div class="skills-layout">
-        <div><p class="eyebrow">FERRAMENTAS</p><h3>Recursos técnicos</h3></div>
-        <div class="skills-content">
-          <div class="skill-row"><span>Linguagens</span><div class="skill-pills"><span>R</span><span>SQL</span><span>Python</span></div></div>
-          <div class="skill-row"><span>Ambientes</span><div class="skill-pills"><span>RStudio</span><span>VS Code</span><span>GitHub</span><span>Excel</span></div></div>
-          <div class="skill-row"><span>Métodos</span><div class="skill-pills"><span>Regressão</span><span>GLM</span><span>MCMC</span><span>Bootstrap</span><span>Pesquisa amostral</span></div></div>
-          <div class="skill-row"><span>Idiomas</span><div class="skill-pills"><span>Português</span><span>Inglês · intermediário</span><span>Mandarim · HSK 3 / HSKK 1</span><span>Japonês · básico</span><span>Espanhol · básico</span></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contato">
-      <div class="container contact-inner">
-        <div>
-          <p class="eyebrow">04 / CONTATO</p>
-          <h2>Vamos trocar<br><span class="gradient-text">ideias?</span></h2>
-          <p>Para conversar sobre projetos, pesquisa, Estatística ou oportunidades de colaboração.</p>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:eduardo.hsu02@gmail.com"><span>E-MAIL</span><strong>eduardo.hsu02@gmail.com</strong><b>↗</b></a>
-          <a href="https://www.linkedin.com/in/eduardo-hsu-99b45b367/" target="_blank" rel="noopener noreferrer"><span>LINKEDIN</span><strong>Perfil profissional</strong><b>↗</b></a>
-          <a href="https://github.com/EduardoSHsu" target="_blank" rel="noopener noreferrer"><span>GITHUB</span><strong>Código e projetos</strong><b>↗</b></a>
-        </div>
+    <section class="section" id="contato">
+      <h2>// CONTATO</h2>
+      <div class="hero-links">
+        <a href="mailto:eduardo.hsu02@gmail.com">eduardo.hsu02@gmail.com ↗</a>
+        <a href="https://www.linkedin.com/in/eduardo-hsu-99b45b367/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="https://github.com/EduardoSHsu" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <a class="brand" href="#inicio"><span class="brand-mark">EH<span>.</span></span><span class="brand-name">Eduardo Hsu <small>ESTATÍSTICA · UNICAMP</small></span></a>
-      <p>Modelagem estatística · Pesquisa · Computação</p>
-      <span class="mono">© 2026</span>
-    </div>
+  <footer class="container site-footer">
+    <span>Campinas, SP</span>
+    <span>© 2026 Eduardo Hsu</span>
   </footer>
+
 </body>
 </html>
