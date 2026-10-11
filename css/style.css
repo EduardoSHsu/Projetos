@@ -9,7 +9,7 @@
   --accent: #c084fc;
   --mono: "DM Mono", monospace;
   --sans: "Manrope", sans-serif;
-  --container: 900px;
+  --container: 860px;
 }
 
 * { box-sizing: border-box; }
@@ -38,7 +38,7 @@ a:focus-visible { outline: 1px solid var(--accent); outline-offset: 3px; }
 }
 
 .nav {
-  height: 70px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,23 +66,23 @@ a:focus-visible { outline: 1px solid var(--accent); outline-offset: 3px; }
 }
 
 .hero {
-  padding: 80px 0 60px;
+  padding: 60px 0 40px;
   border-bottom: 1px solid var(--border);
 }
 
 .hero h1 {
-  font-size: clamp(2.2rem, 4vw, 3rem);
-  line-height: 1.2;
+  font-size: 1.35rem;
   font-weight: 700;
-  margin: 0 0 16px;
-  letter-spacing: -0.03em;
+  line-height: 1.4;
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
 }
 
 .hero p {
   color: var(--muted);
-  font-size: 1rem;
-  max-width: 600px;
-  margin: 0 0 24px;
+  font-size: 0.95rem;
+  max-width: 680px;
+  margin: 0 0 20px;
 }
 
 .hero-links {
@@ -101,12 +101,12 @@ a:focus-visible { outline: 1px solid var(--accent); outline-offset: 3px; }
 }
 
 .section {
-  padding: 60px 0;
+  padding: 50px 0;
   border-bottom: 1px solid var(--border);
 }
 
 .section h2 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin: 0 0 24px;
   letter-spacing: -0.02em;
@@ -117,59 +117,66 @@ a:focus-visible { outline: 1px solid var(--accent); outline-offset: 3px; }
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
+  gap: 20px;
 }
 
+/* Card com padding generoso nas laterais para o texto não colar nas bordas */
 .project-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  padding: 24px;
+  padding: 28px 32px;
+  border-radius: 4px;
   transition: border-color 0.2s;
 }
 
 .project-card:hover {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.22);
 }
 
 .project-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 8px;
+  gap: 16px;
+  margin-bottom: 10px;
 }
 
 .project-meta {
   color: var(--muted);
   font-family: var(--mono);
   font-size: 0.75rem;
+  white-space: nowrap;
 }
 
 .project-card h3 {
   font-size: 1.05rem;
   font-weight: 600;
-  margin: 0 0 8px;
+  margin: 0;
+  line-height: 1.35;
 }
 
 .project-card p {
   color: var(--muted);
   font-size: 0.9rem;
-  margin: 0 0 16px;
+  margin: 0 0 18px;
+  line-height: 1.6;
 }
 
 .tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 16px;
+  gap: 8px;
+  margin-bottom: 18px;
 }
 
 .tag-list span {
   background: var(--surface-2);
   border: 1px solid var(--border);
-  padding: 2px 8px;
-  font-size: 0.7rem;
+  padding: 3px 10px;
+  font-size: 0.72rem;
   font-family: var(--mono);
   color: var(--muted);
+  border-radius: 2px;
 }
 
 .text-link {
@@ -185,47 +192,8 @@ a:focus-visible { outline: 1px solid var(--accent); outline-offset: 3px; }
   text-decoration: underline;
 }
 
-.cv-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-@media (max-width: 768px) {
-  .cv-grid { grid-template-columns: 1fr; gap: 30px; }
-}
-
-.cv-block h3 {
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin: 0 0 12px;
-}
-
-.cv-item {
-  margin-bottom: 20px;
-}
-
-.cv-item-title {
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin: 0 0 2px;
-}
-
-.cv-item-sub {
-  font-size: 0.8rem;
-  color: var(--muted);
-  margin: 0 0 6px;
-  font-family: var(--mono);
-}
-
-.cv-item p {
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin: 0;
-}
-
 .site-footer {
-  padding: 40px 0;
+  padding: 36px 0;
   color: var(--muted);
   font-size: 0.8rem;
   font-family: var(--mono);
@@ -234,7 +202,8 @@ a:focus-visible { outline: 1px solid var(--accent); outline-offset: 3px; }
 }
 
 @media (max-width: 600px) {
-  .hero { padding: 50px 0 40px; }
-  .section { padding: 40px 0; }
-  .site-footer { flex-direction: column; gap: 10px; }
+  .project-card { padding: 20px; }
+  .hero { padding: 40px 0 30px; }
+  .section { padding: 36px 0; }
+  .site-footer { flex-direction: column; gap: 8px; }
 }
