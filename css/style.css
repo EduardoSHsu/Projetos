@@ -1,5 +1,3 @@
-/* Portfólio acadêmico — Eduardo Hsu
-   Paleta própria em roxo e preto, inspirada no ambiente visual da SEMEST/Unicamp. */
 :root {
   color-scheme: dark;
   --bg: #100d16;
@@ -113,6 +111,411 @@ a:focus-visible { outline: 2px solid var(--purple-bright); outline-offset: 5px; 
 .scatter-graphic { position: absolute; inset: 45px 25px 35px; border-left: 1px solid rgba(200,174,255,.4); border-bottom: 1px solid rgba(200,174,255,.4); }
 .scatter-graphic i { position: absolute; width: 7px; height: 7px; border-radius: 50%; background: var(--purple-bright); box-shadow: 0 0 12px rgba(168,121,255,.5); }
 .scatter-graphic i:nth-child(1) { left: 8%; bottom: 12%; }.scatter-graphic i:nth-child(2) { left: 18%; bottom: 22%; }.scatter-graphic i:nth-child(3) { left: 25%; bottom: 18%; }.scatter-graphic i:nth-child(4) { left: 31%; bottom: 38%; }.scatter-graphic i:nth-child(5) { left: 39%; bottom: 32%; }.scatter-graphic i:nth-child(6) { left: 43%; bottom: 48%; }.scatter-graphic i:nth-child(7) { left: 49%; bottom: 42%; }.scatter-graphic i:nth-child(8) { left: 55%; bottom: 59%; }.scatter-graphic i:nth-child(9) { left: 61%; bottom: 54%; }.scatter-graphic i:nth-child(10) { left: 66%; bottom: 66%; }.scatter-graphic i:nth-child(11) { left: 71%; bottom: 58%; }.scatter-graphic i:nth-child(12) { left: 77%; bottom: 79%; }.scatter-graphic i:nth-child(13) { left: 84%; bottom: 73%; }.scatter-graphic i:nth-child(14) { left: 90%; bottom: 87%; }.scatter-graphic i:nth-child(15) { left: 20%; bottom: 42%; }.scatter-graphic i:nth-child(16) { left: 37%; bottom: 22%; }.scatter-graphic i:nth-child(17) { left: 59%; bottom: 33%; }.scatter-graphic i:nth-child(18) { left: 81%; bottom: 50%; }
+
+.monte-carlo-graphic {
+  position: absolute;
+  inset: 36px 25px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.simulation-label,
+.simulation-footer,
+.questionnaire-index,
+.regression-label,
+.vehicle-metrics {
+  font: .55rem var(--mono);
+  letter-spacing: .09em;
+  color: #bda2ec;
+}
+
+.simulation-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.simulation-chart {
+  position: relative;
+  height: 115px;
+  margin: 12px 0;
+  border-left: 1px solid rgba(200,174,255,.35);
+  border-bottom: 1px solid rgba(200,174,255,.35);
+}
+
+.chart-grid,
+.vehicle-grid {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(190,155,255,.10) 0,
+    rgba(190,155,255,.10) 1px,
+    transparent 1px,
+    transparent 25%
+  );
+}
+
+.simulation-bars {
+  position: absolute;
+  inset: 10px 0 0;
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  gap: 4px;
+}
+
+.simulation-bars i {
+  flex: 1;
+  max-width: 13px;
+  height: 35%;
+  background: linear-gradient(
+    to top,
+    rgba(117,67,199,.18),
+    rgba(168,121,255,.7)
+  );
+  border: 1px solid rgba(195,162,255,.45);
+}
+
+.simulation-bars i:nth-child(3n) {
+  height: 65%;
+}
+
+.simulation-bars i:nth-child(4n) {
+  height: 90%;
+}
+
+.simulation-bars i:nth-child(5n) {
+  height: 48%;
+}
+
+.simulation-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  fill: none;
+  stroke: #e0caff;
+  stroke-width: 1.5;
+  filter: drop-shadow(0 0 4px rgba(168,121,255,.6));
+}
+
+.simulation-lines path:nth-child(2) {
+  stroke: #9567df;
+  stroke-dasharray: 4 4;
+  opacity: .8;
+}
+
+.simulation-lines path:nth-child(3) {
+  stroke: #a879ff;
+  opacity: .7;
+}
+
+.simulation-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: .48rem;
+}
+
+.simulation-footer span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.simulation-footer i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--purple-bright);
+  box-shadow: 0 0 8px var(--purple);
+}
+
+
+.questionnaire-graphic {
+  position: absolute;
+  inset: 38px 24px 36px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.questionnaire-panel {
+  position: relative;
+  min-width: 0;
+  padding: 12px 10px;
+  border: 1px solid rgba(190,155,255,.35);
+  background: linear-gradient(
+    145deg,
+    rgba(168,121,255,.09),
+    rgba(168,121,255,.015)
+  );
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+
+.panel-open {
+  transform: translateY(-7px);
+}
+
+.panel-closed {
+  transform: translateY(7px);
+}
+
+.questionnaire-index {
+  display: block;
+  margin-bottom: 13px;
+  font-size: .46rem;
+  white-space: nowrap;
+}
+
+.questionnaire-title {
+  color: #e8dcff;
+  font-size: .65rem;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.answer-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.answer-lines i {
+  height: 3px;
+  width: 100%;
+  background: rgba(195,162,255,.22);
+  border-radius: 2px;
+}
+
+.answer-lines i:nth-child(2) {
+  width: 82%;
+}
+
+.answer-lines i:nth-child(3) {
+  width: 92%;
+}
+
+.answer-lines i:nth-child(4) {
+  width: 58%;
+}
+
+.answer-cursor {
+  width: 2px;
+  height: 13px;
+  margin-top: 8px;
+  background: var(--purple-bright);
+  box-shadow: 0 0 8px var(--purple);
+}
+
+.answer-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  min-width: 0;
+  padding: 5px;
+  border: 1px solid rgba(190,155,255,.14);
+  color: #b2a8c2;
+  font: .49rem var(--mono);
+}
+
+.answer-option > i {
+  flex: 0 0 9px;
+  width: 9px;
+  height: 9px;
+  border: 1px solid rgba(195,162,255,.6);
+  border-radius: 50%;
+}
+
+.answer-option span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.answer-option b {
+  margin-left: auto;
+  color: var(--purple-bright);
+  font-size: .6rem;
+}
+
+.answer-option.selected {
+  border-color: rgba(168,121,255,.55);
+  background: rgba(168,121,255,.12);
+  color: #eadfff;
+}
+
+.answer-option.selected > i {
+  border: 3px solid var(--purple-bright);
+  background: #392650;
+}
+
+.questionnaire-connector {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.questionnaire-connector span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--purple-bright);
+  box-shadow: 0 0 8px var(--purple);
+}
+
+.questionnaire-connector i {
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  height: 1px;
+  background: var(--purple);
+  z-index: -1;
+}
+
+
+
+.vehicle-regression-graphic {
+  position: absolute;
+  inset: 35px 25px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.regression-label {
+  font-size: .49rem;
+}
+
+.vehicle-plot {
+  position: relative;
+  height: 100px;
+  margin: 7px 0 0;
+  border-left: 1px solid rgba(200,174,255,.35);
+  border-bottom: 1px solid rgba(200,174,255,.35);
+}
+
+.regression-line {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  fill: var(--purple-bright);
+}
+
+.regression-trend {
+  fill: none;
+  stroke: #d7baff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 4px rgba(168,121,255,.55));
+}
+
+.regression-guide {
+  fill: none;
+  stroke: rgba(190,155,255,.25);
+  stroke-width: 1;
+  stroke-dasharray: 3 4;
+}
+
+.regression-line circle {
+  stroke: #21172f;
+  stroke-width: 1.5;
+  filter: drop-shadow(0 0 4px rgba(168,121,255,.65));
+}
+
+.vehicle-silhouette {
+  position: absolute;
+  width: 64%;
+  right: 0;
+  bottom: 18px;
+  opacity: .8;
+}
+
+.vehicle-silhouette svg {
+  display: block;
+  width: 100%;
+  overflow: visible;
+  fill: rgba(168,121,255,.17);
+  stroke: #b995f7;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+
+.vehicle-silhouette .vehicle-window {
+  fill: rgba(195,162,255,.3);
+  stroke: rgba(195,162,255,.7);
+  stroke-width: 1;
+}
+
+.vehicle-silhouette circle {
+  fill: #21172f;
+  stroke: #c3a2ff;
+  stroke-width: 2;
+}
+
+.vehicle-metrics {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-top: 1px solid rgba(190,155,255,.2);
+  padding-top: 8px;
+  font-size: .46rem;
+}
+
+.vehicle-metrics span {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.vehicle-metrics b {
+  color: #eadfff;
+  font-weight: 500;
+}
+
+
+@media (max-width: 400px) {
+  .questionnaire-graphic {
+    inset-inline: 18px;
+    gap: 9px;
+  }
+
+  .questionnaire-panel {
+    padding-inline: 7px;
+  }
+
+  .questionnaire-title {
+    font-size: .58rem;
+  }
+
+  .questionnaire-index {
+    font-size: .42rem;
+  }
+
+  .vehicle-regression-graphic,
+  .monte-carlo-graphic {
+    inset-inline: 20px;
+  }
+
+  .simulation-footer,
+  .vehicle-metrics {
+    font-size: .42rem;
+  }
+}
 .art-spectrum { background: radial-gradient(ellipse at center, rgba(117,67,199,.18), transparent 60%), #1c1728; }
 .spectrum-graphic { position: absolute; inset: 40px 25px 35px; display: flex; align-items: center; justify-content: center; gap: 7px; }
 .spectrum-graphic i { display: block; width: 5px; height: 22%; background: var(--purple); opacity: .75; }
